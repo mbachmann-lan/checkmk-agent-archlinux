@@ -7,4 +7,4 @@ remove package
 > $ pacman -R check-mk-agent
 
 
-For more information, please visit the official project homepage. [project homepage](https://bachmann-lan.de)
+For more information, please visit my [project homepage](https://bachmann-lan.de).

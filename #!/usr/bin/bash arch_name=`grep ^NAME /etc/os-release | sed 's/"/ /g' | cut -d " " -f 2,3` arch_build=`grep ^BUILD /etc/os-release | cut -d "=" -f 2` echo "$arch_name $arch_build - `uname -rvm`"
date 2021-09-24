@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+arch_name=`grep ^NAME /etc/os-release | sed 's/"/ /g' | cut -d " " -f 2,3`
+arch_build=`grep ^BUILD /etc/os-release | cut -d "=" -f 2`
+echo "$arch_name $arch_build - `uname -rvm`"

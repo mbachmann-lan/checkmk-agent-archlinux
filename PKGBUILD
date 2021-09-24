@@ -17,7 +17,10 @@ source=("check_mk_agent.linux::https://raw.githubusercontent.com/tribe29/checkmk
         "check_mk-agent.service::https://raw.githubusercontent.com/tribe29/checkmk/v${pkgver}/agents/cfg_examples/systemd/check_mk%40.service"
         "check_mk-agent.socket::https://raw.githubusercontent.com/tribe29/checkmk/v${pkgver}/agents/cfg_examples/systemd/check_mk.socket")
 
-sha512sums=('3e972fa22f9a0f281d904ea465afac7b24a69bdf34498c753631441f0e084561073279fa73f3bf21e9a4fe653453320d1372348fd054fdfd3f24e592bf3ce8a3'     'cfbf17d67b0295c428aa528529f8acec995311e9490e64c4b764c06cd8234c1e8008618e6684c11ebe93c07452942af1c5911e21dda7c02b4bed5dd4f3d0f123'      '788e192794ae2c076ac377c17094c405ec0faddf4471dbc54c380c8b4591a3abda7d95d489bf1d9bd67787408babe92a491c05d36e7945a70847c3afd9d54ff9'      '8f78f0e047a71966ad3c73cf9240cdba1414b4d56608c6333543d8d8744fc86eef1135257e905a52644415ffc7656b6600f8562cbd598ec7bf02ef794e2fa242')
+sha512sums=('3e972fa22f9a0f281d904ea465afac7b24a69bdf34498c753631441f0e084561073279fa73f3bf21e9a4fe653453320d1372348fd054fdfd3f24e592bf3ce8a3'
+'cfbf17d67b0295c428aa528529f8acec995311e9490e64c4b764c06cd8234c1e8008618e6684c11ebe93c07452942af1c5911e21dda7c02b4bed5dd4f3d0f123'
+'788e192794ae2c076ac377c17094c405ec0faddf4471dbc54c380c8b4591a3abda7d95d489bf1d9bd67787408babe92a491c05d36e7945a70847c3afd9d54ff9'
+'8f78f0e047a71966ad3c73cf9240cdba1414b4d56608c6333543d8d8744fc86eef1135257e905a52644415ffc7656b6600f8562cbd598ec7bf02ef794e2fa242')
 
 package() {
         mkdir -p "$pkgdir/etc/check_mk/"

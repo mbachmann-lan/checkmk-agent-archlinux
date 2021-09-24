@@ -1,5 +1,7 @@
 # Checkmk Agent for Arch Linux
 
+forked from: https://github.com/pfeilmann/check_mk-agent
+
 list installed external packages
 ```
 $ pacman -Qm

@@ -1,0 +1,12 @@
+#!/bin/bash
+pacmanUpdates=$(pacman -Syup | grep http:// | wc -l)
+
+if [ "$pacmanUpdates" -gt 0 ]; then
+ updateCount="$pacmanUpdates"
+ echo "Pacman WARN: $updateCount packages available for upgrade."
+ exit 1
+
+else
+ updateCount=0
+ echo "Pacman OK: $updateCount packages available for upgrade."
+fi
